@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "B7F9CCBF-D815-4B64-853B-2179F660976E"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5FA66925-49A8-4580-850D-2F5C7E52A71A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TapAndPay/View/Popup/PopupViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "handlePlusButtonAction()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5FA66925-49A8-4580-850D-2F5C7E52A71A - 677c3214f3a672ef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TapAndPay.PopupViewController.handlePlusButtonAction() -&gt; ()"
+                  moduleName = "TapAndPay"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sushantsmacbook/Neosoft/IOS/TapAndPay/TapAndPay/View/Popup/PopupViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "1972">
+               </Location>
+               <Location
+                  uuid = "5FA66925-49A8-4580-850D-2F5C7E52A71A - 677c3214f3a672ef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TapAndPay.PopupViewController.handlePlusButtonAction() -&gt; ()"
+                  moduleName = "TapAndPay"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sushantsmacbook/Neosoft/IOS/TapAndPay/TapAndPay/View/Popup/PopupViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "1656">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7E780F6C-8AF4-4A51-A321-1EBDA6D2F141"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TapAndPay/View/Popup/PopupViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "handleMinusButtonAction()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7E780F6C-8AF4-4A51-A321-1EBDA6D2F141 - 64287f974ee68cc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TapAndPay.PopupViewController.handleMinusButtonAction() -&gt; ()"
+                  moduleName = "TapAndPay"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sushantsmacbook/Neosoft/IOS/TapAndPay/TapAndPay/View/Popup/PopupViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "2192">
+               </Location>
+               <Location
+                  uuid = "7E780F6C-8AF4-4A51-A321-1EBDA6D2F141 - 64287f974ee68cc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TapAndPay.PopupViewController.handleMinusButtonAction() -&gt; ()"
+                  moduleName = "TapAndPay"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sushantsmacbook/Neosoft/IOS/TapAndPay/TapAndPay/View/Popup/PopupViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "1912">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

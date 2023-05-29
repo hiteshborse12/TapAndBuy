@@ -1,0 +1,6 @@
+framework module Pods_TapAndPay_TapAndPayUITests {
+  umbrella header "Pods-TapAndPay-TapAndPayUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

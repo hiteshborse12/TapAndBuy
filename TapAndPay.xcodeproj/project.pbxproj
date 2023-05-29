@@ -1,0 +1,964 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BC01C092A87122906D47F03 /* Pods_TapAndPay_TapAndPayUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73AB4FD2F18FCC6D98EC8D0C /* Pods_TapAndPay_TapAndPayUITests.framework */; };
+		692B47EC96CBD5789502C0FF /* Pods_TapAndPayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5978330F28FBC7401120B106 /* Pods_TapAndPayTests.framework */; };
+		6C118F011AF213D69E326392 /* Pods_TapAndPay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E27E6368D6587FC1EB80C2E6 /* Pods_TapAndPay.framework */; };
+		92673F082A2470EB00DDF961 /* OrderSummeryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92673F072A2470EB00DDF961 /* OrderSummeryViewController.swift */; };
+		927639DB2A1F280700A3BCE6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927639DA2A1F280700A3BCE6 /* Constants.swift */; };
+		929711E82A209365009E8BC2 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929711E72A209365009E8BC2 /* ProductDetailView.swift */; };
+		92DD1FBF29FBD07D00554508 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD1FBE29FBD07D00554508 /* AppDelegate.swift */; };
+		92DD1FC629FBD07D00554508 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92DD1FC429FBD07D00554508 /* Main.storyboard */; };
+		92DD1FC929FBD07D00554508 /* TapAndPay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 92DD1FC729FBD07D00554508 /* TapAndPay.xcdatamodeld */; };
+		92DD1FCB29FBD07E00554508 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92DD1FCA29FBD07E00554508 /* Assets.xcassets */; };
+		92DD1FCE29FBD07E00554508 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92DD1FCC29FBD07E00554508 /* LaunchScreen.storyboard */; };
+		92DD1FD929FBD07E00554508 /* TapAndPayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD1FD829FBD07E00554508 /* TapAndPayTests.swift */; };
+		92DD1FE329FBD07E00554508 /* TapAndPayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD1FE229FBD07E00554508 /* TapAndPayUITests.swift */; };
+		92DD1FE529FBD07E00554508 /* TapAndPayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD1FE429FBD07E00554508 /* TapAndPayUITestsLaunchTests.swift */; };
+		92DD1FF529FBDAF300554508 /* ProductListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD1FF129FBDAF300554508 /* ProductListingViewController.swift */; };
+		92DD1FF629FBDAF300554508 /* ProductListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD1FF229FBDAF300554508 /* ProductListingViewModel.swift */; };
+		92DD1FFB29FBE3D300554508 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD1FF929FBE3D200554508 /* DesignableButton.swift */; };
+		92DD1FFC29FBE3D300554508 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD1FFA29FBE3D300554508 /* DesignableView.swift */; };
+		92DD200129FBF26800554508 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD1FFD29FBF26800554508 /* HomeViewController.swift */; };
+		92DD200229FBF26800554508 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD1FFE29FBF26800554508 /* HomeViewModel.swift */; };
+		92DD200A29FBF42E00554508 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD200929FBF42E00554508 /* ProductModel.swift */; };
+		92DD200F29FBF60500554508 /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD200C29FBF60500554508 /* UIImageView+Ext.swift */; };
+		92DD201129FBF60500554508 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD200E29FBF60500554508 /* Extension.swift */; };
+		92DD201429FBF92B00554508 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92DD201329FBF92B00554508 /* GoogleService-Info.plist */; };
+		92DD201629FBF94500554508 /* ProductListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD201529FBF94500554508 /* ProductListTableViewCell.swift */; };
+		92DD201829FBFADA00554508 /* ProductListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92DD201729FBFAD900554508 /* ProductListTableViewCell.xib */; };
+		92EEA5AF2A1DE3AD00AB9B73 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EEA5AE2A1DE3AD00AB9B73 /* CheckoutViewController.swift */; };
+		92EEA5B12A1DE69C00AB9B73 /* CheckoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EEA5B02A1DE69C00AB9B73 /* CheckoutViewModel.swift */; };
+		92EEA5B32A1E000300AB9B73 /* UPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EEA5B22A1E000300AB9B73 /* UPIModel.swift */; };
+		92EEA5B62A1E17B900AB9B73 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EEA5B52A1E17B900AB9B73 /* DataProvider.swift */; };
+		92EEA5C52A1E43D000AB9B73 /* NFCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EEA5C22A1E43D000AB9B73 /* NFCManager.swift */; };
+		92EEA5C62A1E43D000AB9B73 /* NFCError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EEA5C42A1E43D000AB9B73 /* NFCError.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		92DD1FD529FBD07E00554508 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92DD1FB329FBD07D00554508 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92DD1FBA29FBD07D00554508;
+			remoteInfo = TapAndPay;
+		};
+		92DD1FDF29FBD07E00554508 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92DD1FB329FBD07D00554508 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92DD1FBA29FBD07D00554508;
+			remoteInfo = TapAndPay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24296538491A52FE909C07B5 /* Pods-TapAndPay-TapAndPayUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapAndPay-TapAndPayUITests.debug.xcconfig"; path = "Target Support Files/Pods-TapAndPay-TapAndPayUITests/Pods-TapAndPay-TapAndPayUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5978330F28FBC7401120B106 /* Pods_TapAndPayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TapAndPayTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A487637379634C53971A8B2 /* Pods-TapAndPayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapAndPayTests.debug.xcconfig"; path = "Target Support Files/Pods-TapAndPayTests/Pods-TapAndPayTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6D2FCB3CAAC5675079D52C06 /* Pods-TapAndPayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapAndPayTests.release.xcconfig"; path = "Target Support Files/Pods-TapAndPayTests/Pods-TapAndPayTests.release.xcconfig"; sourceTree = "<group>"; };
+		73AB4FD2F18FCC6D98EC8D0C /* Pods_TapAndPay_TapAndPayUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TapAndPay_TapAndPayUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92673F072A2470EB00DDF961 /* OrderSummeryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSummeryViewController.swift; sourceTree = "<group>"; };
+		927639DA2A1F280700A3BCE6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		929711E72A209365009E8BC2 /* ProductDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		92DD1FBB29FBD07D00554508 /* TapAndPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapAndPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		92DD1FBE29FBD07D00554508 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		92DD1FC529FBD07D00554508 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		92DD1FC829FBD07D00554508 /* TapAndPay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TapAndPay.xcdatamodel; sourceTree = "<group>"; };
+		92DD1FCA29FBD07E00554508 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92DD1FCD29FBD07E00554508 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		92DD1FCF29FBD07E00554508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92DD1FD429FBD07E00554508 /* TapAndPayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapAndPayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92DD1FD829FBD07E00554508 /* TapAndPayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapAndPayTests.swift; sourceTree = "<group>"; };
+		92DD1FDE29FBD07E00554508 /* TapAndPayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapAndPayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92DD1FE229FBD07E00554508 /* TapAndPayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapAndPayUITests.swift; sourceTree = "<group>"; };
+		92DD1FE429FBD07E00554508 /* TapAndPayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapAndPayUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		92DD1FF129FBDAF300554508 /* ProductListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListingViewController.swift; sourceTree = "<group>"; };
+		92DD1FF229FBDAF300554508 /* ProductListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListingViewModel.swift; sourceTree = "<group>"; };
+		92DD1FF929FBE3D200554508 /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		92DD1FFA29FBE3D300554508 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		92DD1FFD29FBF26800554508 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		92DD1FFE29FBF26800554508 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		92DD200929FBF42E00554508 /* ProductModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		92DD200C29FBF60500554508 /* UIImageView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
+		92DD200E29FBF60500554508 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		92DD201329FBF92B00554508 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		92DD201529FBF94500554508 /* ProductListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListTableViewCell.swift; sourceTree = "<group>"; };
+		92DD201729FBFAD900554508 /* ProductListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductListTableViewCell.xib; sourceTree = "<group>"; };
+		92EEA5AE2A1DE3AD00AB9B73 /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		92EEA5B02A1DE69C00AB9B73 /* CheckoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewModel.swift; sourceTree = "<group>"; };
+		92EEA5B22A1E000300AB9B73 /* UPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPIModel.swift; sourceTree = "<group>"; };
+		92EEA5B52A1E17B900AB9B73 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		92EEA5BE2A1E2BDF00AB9B73 /* TapAndPay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TapAndPay.entitlements; sourceTree = "<group>"; };
+		92EEA5C22A1E43D000AB9B73 /* NFCManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFCManager.swift; sourceTree = "<group>"; };
+		92EEA5C42A1E43D000AB9B73 /* NFCError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFCError.swift; sourceTree = "<group>"; };
+		966D57952B82B3EE59A459FB /* Pods-TapAndPay-TapAndPayUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapAndPay-TapAndPayUITests.release.xcconfig"; path = "Target Support Files/Pods-TapAndPay-TapAndPayUITests/Pods-TapAndPay-TapAndPayUITests.release.xcconfig"; sourceTree = "<group>"; };
+		969EAB9E162ED4EBC263FEC0 /* Pods-TapAndPay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapAndPay.release.xcconfig"; path = "Target Support Files/Pods-TapAndPay/Pods-TapAndPay.release.xcconfig"; sourceTree = "<group>"; };
+		BB917C49D1CA51292527C84B /* Pods-TapAndPay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapAndPay.debug.xcconfig"; path = "Target Support Files/Pods-TapAndPay/Pods-TapAndPay.debug.xcconfig"; sourceTree = "<group>"; };
+		E27E6368D6587FC1EB80C2E6 /* Pods_TapAndPay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TapAndPay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		92DD1FB829FBD07D00554508 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C118F011AF213D69E326392 /* Pods_TapAndPay.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92DD1FD129FBD07E00554508 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				692B47EC96CBD5789502C0FF /* Pods_TapAndPayTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92DD1FDB29FBD07E00554508 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BC01C092A87122906D47F03 /* Pods_TapAndPay_TapAndPayUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		841C1138B0456E8F83333E12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E27E6368D6587FC1EB80C2E6 /* Pods_TapAndPay.framework */,
+				73AB4FD2F18FCC6D98EC8D0C /* Pods_TapAndPay_TapAndPayUITests.framework */,
+				5978330F28FBC7401120B106 /* Pods_TapAndPayTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92673F092A24716C00DDF961 /* OrderSummery */ = {
+			isa = PBXGroup;
+			children = (
+				92673F072A2470EB00DDF961 /* OrderSummeryViewController.swift */,
+			);
+			path = OrderSummery;
+			sourceTree = "<group>";
+		};
+		92DD1FB229FBD07D00554508 = {
+			isa = PBXGroup;
+			children = (
+				92DD1FBD29FBD07D00554508 /* TapAndPay */,
+				92DD1FD729FBD07E00554508 /* TapAndPayTests */,
+				92DD1FE129FBD07E00554508 /* TapAndPayUITests */,
+				92DD1FBC29FBD07D00554508 /* Products */,
+				93DF370CD170D73B9CEE2FE0 /* Pods */,
+				841C1138B0456E8F83333E12 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		92DD1FBC29FBD07D00554508 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92DD1FBB29FBD07D00554508 /* TapAndPay.app */,
+				92DD1FD429FBD07E00554508 /* TapAndPayTests.xctest */,
+				92DD1FDE29FBD07E00554508 /* TapAndPayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92DD1FBD29FBD07D00554508 /* TapAndPay */ = {
+			isa = PBXGroup;
+			children = (
+				92EEA5BE2A1E2BDF00AB9B73 /* TapAndPay.entitlements */,
+				92DD1FBE29FBD07D00554508 /* AppDelegate.swift */,
+				92DD200629FBF35D00554508 /* View */,
+				92DD200729FBF36600554508 /* ViewModel */,
+				92DD201229FBF66200554508 /* Model */,
+				92EEA5B72A1E18A100AB9B73 /* FirestoreDataProvider */,
+				92EEA5C12A1E43D000AB9B73 /* NFCManager */,
+				92DD200B29FBF60500554508 /* Common */,
+				92DD1FCA29FBD07E00554508 /* Assets.xcassets */,
+				92DD1FCC29FBD07E00554508 /* LaunchScreen.storyboard */,
+				92DD1FCF29FBD07E00554508 /* Info.plist */,
+				92DD201329FBF92B00554508 /* GoogleService-Info.plist */,
+				92DD1FC729FBD07D00554508 /* TapAndPay.xcdatamodeld */,
+			);
+			path = TapAndPay;
+			sourceTree = "<group>";
+		};
+		92DD1FD729FBD07E00554508 /* TapAndPayTests */ = {
+			isa = PBXGroup;
+			children = (
+				92DD1FD829FBD07E00554508 /* TapAndPayTests.swift */,
+			);
+			path = TapAndPayTests;
+			sourceTree = "<group>";
+		};
+		92DD1FE129FBD07E00554508 /* TapAndPayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				92DD1FE229FBD07E00554508 /* TapAndPayUITests.swift */,
+				92DD1FE429FBD07E00554508 /* TapAndPayUITestsLaunchTests.swift */,
+			);
+			path = TapAndPayUITests;
+			sourceTree = "<group>";
+		};
+		92DD200529FBF34E00554508 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				92DD1FF929FBE3D200554508 /* DesignableButton.swift */,
+				92DD1FFA29FBE3D300554508 /* DesignableView.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		92DD200629FBF35D00554508 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				92DD201929FBFAED00554508 /* Home */,
+				92DD201A29FBFAFA00554508 /* ProductList */,
+				EFABEF5C2A0149DA0018E8B3 /* ProductDetailView */,
+				92EEA5B42A1E151600AB9B73 /* Checkout */,
+				92673F092A24716C00DDF961 /* OrderSummery */,
+				92DD1FC429FBD07D00554508 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		92DD200729FBF36600554508 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				92DD1FFE29FBF26800554508 /* HomeViewModel.swift */,
+				92DD1FF229FBDAF300554508 /* ProductListingViewModel.swift */,
+				92EEA5B02A1DE69C00AB9B73 /* CheckoutViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		92DD200B29FBF60500554508 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				92DD200529FBF34E00554508 /* Custom */,
+				92DD200C29FBF60500554508 /* UIImageView+Ext.swift */,
+				92DD200E29FBF60500554508 /* Extension.swift */,
+				927639DA2A1F280700A3BCE6 /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		92DD201229FBF66200554508 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				92DD200929FBF42E00554508 /* ProductModel.swift */,
+				92EEA5B22A1E000300AB9B73 /* UPIModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		92DD201929FBFAED00554508 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				92DD1FFD29FBF26800554508 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		92DD201A29FBFAFA00554508 /* ProductList */ = {
+			isa = PBXGroup;
+			children = (
+				92DD1FF129FBDAF300554508 /* ProductListingViewController.swift */,
+				92DD201529FBF94500554508 /* ProductListTableViewCell.swift */,
+				92DD201729FBFAD900554508 /* ProductListTableViewCell.xib */,
+			);
+			path = ProductList;
+			sourceTree = "<group>";
+		};
+		92EEA5B42A1E151600AB9B73 /* Checkout */ = {
+			isa = PBXGroup;
+			children = (
+				92EEA5AE2A1DE3AD00AB9B73 /* CheckoutViewController.swift */,
+			);
+			path = Checkout;
+			sourceTree = "<group>";
+		};
+		92EEA5B72A1E18A100AB9B73 /* FirestoreDataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				92EEA5B52A1E17B900AB9B73 /* DataProvider.swift */,
+			);
+			path = FirestoreDataProvider;
+			sourceTree = "<group>";
+		};
+		92EEA5C12A1E43D000AB9B73 /* NFCManager */ = {
+			isa = PBXGroup;
+			children = (
+				92EEA5C22A1E43D000AB9B73 /* NFCManager.swift */,
+				92EEA5C42A1E43D000AB9B73 /* NFCError.swift */,
+			);
+			path = NFCManager;
+			sourceTree = "<group>";
+		};
+		93DF370CD170D73B9CEE2FE0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB917C49D1CA51292527C84B /* Pods-TapAndPay.debug.xcconfig */,
+				969EAB9E162ED4EBC263FEC0 /* Pods-TapAndPay.release.xcconfig */,
+				24296538491A52FE909C07B5 /* Pods-TapAndPay-TapAndPayUITests.debug.xcconfig */,
+				966D57952B82B3EE59A459FB /* Pods-TapAndPay-TapAndPayUITests.release.xcconfig */,
+				5A487637379634C53971A8B2 /* Pods-TapAndPayTests.debug.xcconfig */,
+				6D2FCB3CAAC5675079D52C06 /* Pods-TapAndPayTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EFABEF5C2A0149DA0018E8B3 /* ProductDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				929711E72A209365009E8BC2 /* ProductDetailView.swift */,
+			);
+			path = ProductDetailView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		92DD1FBA29FBD07D00554508 /* TapAndPay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92DD1FE829FBD07E00554508 /* Build configuration list for PBXNativeTarget "TapAndPay" */;
+			buildPhases = (
+				16886DBE50318507BD8279CF /* [CP] Check Pods Manifest.lock */,
+				92DD1FB729FBD07D00554508 /* Sources */,
+				92DD1FB829FBD07D00554508 /* Frameworks */,
+				92DD1FB929FBD07D00554508 /* Resources */,
+				BDF6273B660B337E5770AC3A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TapAndPay;
+			productName = TapAndPay;
+			productReference = 92DD1FBB29FBD07D00554508 /* TapAndPay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		92DD1FD329FBD07E00554508 /* TapAndPayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92DD1FEB29FBD07E00554508 /* Build configuration list for PBXNativeTarget "TapAndPayTests" */;
+			buildPhases = (
+				52C34336C00EDF39AAC2EDAB /* [CP] Check Pods Manifest.lock */,
+				92DD1FD029FBD07E00554508 /* Sources */,
+				92DD1FD129FBD07E00554508 /* Frameworks */,
+				92DD1FD229FBD07E00554508 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92DD1FD629FBD07E00554508 /* PBXTargetDependency */,
+			);
+			name = TapAndPayTests;
+			productName = TapAndPayTests;
+			productReference = 92DD1FD429FBD07E00554508 /* TapAndPayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		92DD1FDD29FBD07E00554508 /* TapAndPayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92DD1FEE29FBD07E00554508 /* Build configuration list for PBXNativeTarget "TapAndPayUITests" */;
+			buildPhases = (
+				E57B563846C6925CC38D4C26 /* [CP] Check Pods Manifest.lock */,
+				92DD1FDA29FBD07E00554508 /* Sources */,
+				92DD1FDB29FBD07E00554508 /* Frameworks */,
+				92DD1FDC29FBD07E00554508 /* Resources */,
+				BAD5C84318F31D89D857A5A0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92DD1FE029FBD07E00554508 /* PBXTargetDependency */,
+			);
+			name = TapAndPayUITests;
+			productName = TapAndPayUITests;
+			productReference = 92DD1FDE29FBD07E00554508 /* TapAndPayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92DD1FB329FBD07D00554508 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					92DD1FBA29FBD07D00554508 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					92DD1FD329FBD07E00554508 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 92DD1FBA29FBD07D00554508;
+					};
+					92DD1FDD29FBD07E00554508 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 92DD1FBA29FBD07D00554508;
+					};
+				};
+			};
+			buildConfigurationList = 92DD1FB629FBD07D00554508 /* Build configuration list for PBXProject "TapAndPay" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 92DD1FB229FBD07D00554508;
+			productRefGroup = 92DD1FBC29FBD07D00554508 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				92DD1FBA29FBD07D00554508 /* TapAndPay */,
+				92DD1FD329FBD07E00554508 /* TapAndPayTests */,
+				92DD1FDD29FBD07E00554508 /* TapAndPayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		92DD1FB929FBD07D00554508 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92DD201829FBFADA00554508 /* ProductListTableViewCell.xib in Resources */,
+				92DD1FCE29FBD07E00554508 /* LaunchScreen.storyboard in Resources */,
+				92DD201429FBF92B00554508 /* GoogleService-Info.plist in Resources */,
+				92DD1FCB29FBD07E00554508 /* Assets.xcassets in Resources */,
+				92DD1FC629FBD07D00554508 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92DD1FD229FBD07E00554508 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92DD1FDC29FBD07E00554508 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16886DBE50318507BD8279CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TapAndPay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52C34336C00EDF39AAC2EDAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TapAndPayTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAD5C84318F31D89D857A5A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TapAndPay-TapAndPayUITests/Pods-TapAndPay-TapAndPayUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TapAndPay-TapAndPayUITests/Pods-TapAndPay-TapAndPayUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TapAndPay-TapAndPayUITests/Pods-TapAndPay-TapAndPayUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDF6273B660B337E5770AC3A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TapAndPay/Pods-TapAndPay-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TapAndPay/Pods-TapAndPay-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TapAndPay/Pods-TapAndPay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E57B563846C6925CC38D4C26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TapAndPay-TapAndPayUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92DD1FB729FBD07D00554508 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92EEA5B12A1DE69C00AB9B73 /* CheckoutViewModel.swift in Sources */,
+				929711E82A209365009E8BC2 /* ProductDetailView.swift in Sources */,
+				92EEA5C62A1E43D000AB9B73 /* NFCError.swift in Sources */,
+				92DD200F29FBF60500554508 /* UIImageView+Ext.swift in Sources */,
+				92DD1FFC29FBE3D300554508 /* DesignableView.swift in Sources */,
+				92DD200229FBF26800554508 /* HomeViewModel.swift in Sources */,
+				92DD1FC929FBD07D00554508 /* TapAndPay.xcdatamodeld in Sources */,
+				92DD1FFB29FBE3D300554508 /* DesignableButton.swift in Sources */,
+				92DD201629FBF94500554508 /* ProductListTableViewCell.swift in Sources */,
+				92EEA5AF2A1DE3AD00AB9B73 /* CheckoutViewController.swift in Sources */,
+				92EEA5B32A1E000300AB9B73 /* UPIModel.swift in Sources */,
+				92EEA5C52A1E43D000AB9B73 /* NFCManager.swift in Sources */,
+				92DD1FF629FBDAF300554508 /* ProductListingViewModel.swift in Sources */,
+				92673F082A2470EB00DDF961 /* OrderSummeryViewController.swift in Sources */,
+				92DD200129FBF26800554508 /* HomeViewController.swift in Sources */,
+				92DD1FF529FBDAF300554508 /* ProductListingViewController.swift in Sources */,
+				92DD201129FBF60500554508 /* Extension.swift in Sources */,
+				927639DB2A1F280700A3BCE6 /* Constants.swift in Sources */,
+				92EEA5B62A1E17B900AB9B73 /* DataProvider.swift in Sources */,
+				92DD1FBF29FBD07D00554508 /* AppDelegate.swift in Sources */,
+				92DD200A29FBF42E00554508 /* ProductModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92DD1FD029FBD07E00554508 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92DD1FD929FBD07E00554508 /* TapAndPayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92DD1FDA29FBD07E00554508 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92DD1FE329FBD07E00554508 /* TapAndPayUITests.swift in Sources */,
+				92DD1FE529FBD07E00554508 /* TapAndPayUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92DD1FD629FBD07E00554508 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92DD1FBA29FBD07D00554508 /* TapAndPay */;
+			targetProxy = 92DD1FD529FBD07E00554508 /* PBXContainerItemProxy */;
+		};
+		92DD1FE029FBD07E00554508 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92DD1FBA29FBD07D00554508 /* TapAndPay */;
+			targetProxy = 92DD1FDF29FBD07E00554508 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		92DD1FC429FBD07D00554508 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92DD1FC529FBD07D00554508 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		92DD1FCC29FBD07E00554508 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92DD1FCD29FBD07E00554508 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		92DD1FE629FBD07E00554508 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		92DD1FE729FBD07E00554508 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		92DD1FE929FBD07E00554508 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB917C49D1CA51292527C84B /* Pods-TapAndPay.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TapAndPay/TapAndPay.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HPQ34QMQKX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TapAndPay/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TapAndBuy;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
+				INFOPLIST_KEY_NFCReaderUsageDescription = "Need NFC access to read cart shelf";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wiccon.testdemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		92DD1FEA29FBD07E00554508 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 969EAB9E162ED4EBC263FEC0 /* Pods-TapAndPay.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TapAndPay/TapAndPay.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HPQ34QMQKX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TapAndPay/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TapAndBuy;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
+				INFOPLIST_KEY_NFCReaderUsageDescription = "Need NFC access to read cart shelf";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wiccon.testdemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		92DD1FEC29FBD07E00554508 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A487637379634C53971A8B2 /* Pods-TapAndPayTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.test.TapAndPayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TapAndPay.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TapAndPay";
+			};
+			name = Debug;
+		};
+		92DD1FED29FBD07E00554508 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D2FCB3CAAC5675079D52C06 /* Pods-TapAndPayTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.test.TapAndPayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TapAndPay.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TapAndPay";
+			};
+			name = Release;
+		};
+		92DD1FEF29FBD07E00554508 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24296538491A52FE909C07B5 /* Pods-TapAndPay-TapAndPayUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.test.TapAndPayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TapAndPay;
+			};
+			name = Debug;
+		};
+		92DD1FF029FBD07E00554508 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 966D57952B82B3EE59A459FB /* Pods-TapAndPay-TapAndPayUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.test.TapAndPayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TapAndPay;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		92DD1FB629FBD07D00554508 /* Build configuration list for PBXProject "TapAndPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92DD1FE629FBD07E00554508 /* Debug */,
+				92DD1FE729FBD07E00554508 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92DD1FE829FBD07E00554508 /* Build configuration list for PBXNativeTarget "TapAndPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92DD1FE929FBD07E00554508 /* Debug */,
+				92DD1FEA29FBD07E00554508 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92DD1FEB29FBD07E00554508 /* Build configuration list for PBXNativeTarget "TapAndPayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92DD1FEC29FBD07E00554508 /* Debug */,
+				92DD1FED29FBD07E00554508 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92DD1FEE29FBD07E00554508 /* Build configuration list for PBXNativeTarget "TapAndPayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92DD1FEF29FBD07E00554508 /* Debug */,
+				92DD1FF029FBD07E00554508 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		92DD1FC729FBD07D00554508 /* TapAndPay.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				92DD1FC829FBD07D00554508 /* TapAndPay.xcdatamodel */,
+			);
+			currentVersion = 92DD1FC829FBD07D00554508 /* TapAndPay.xcdatamodel */;
+			path = TapAndPay.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 92DD1FB329FBD07D00554508 /* Project object */;
+}
