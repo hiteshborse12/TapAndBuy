@@ -1,5 +1,7 @@
 # Tap and Buy application aims to provide a seamless shopping experience for customers. Application allows users to purchase items by simply tapping their phone on an NFC tag(on shop shelves)
 
+![Demo](https://github.com/hiteshborse12/TapAndBuy/blob/main/video.gif)
+
 # UI/UX
 ![Screenshot](https://github.com/hiteshborse12/TapAndBuy/blob/main/screenshot.png)
 - https://www.figma.com/proto/3RPEk7JXc0441PHbJQKJbz/TapAndBuy-(Community)?type=design&node-id=2-24&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A24
